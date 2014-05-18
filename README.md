@@ -1,0 +1,1 @@
+The purpose of this website is to create barbershops blogs for barbershops automatically.
