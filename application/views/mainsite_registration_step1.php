@@ -21,6 +21,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
+
         function responsiveForm()
         {
             var w = window.innerWidth;
@@ -45,6 +46,32 @@
         }
         x=0;
         $(document).ready(function(){
+            $("#submitDomain").click(function(){
+                var input = $("#inputDomain").val();
+                if (input.length==0)
+                {
+                    console.log('not valid');
+                    $("#checkPicDomain").attr('class', "yes_or_no no");
+                    $("#checkPicDomain").html("no");
+                    return;
+                }
+                input = input.concat(".",$("#selectDomain option:selected").text());
+                //alert(input);
+                $.get("index.php/getCheck",function(result){
+                    alert(result);
+                });
+                /*var xmlhttp=new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        alert(xmlhttp.responseText);
+                        document.getElementById("checkPicDomain").className = "yes_or_no ".concat(xmlhttp.responseText);
+                    }
+                }
+                xmlhttp.open("GET","http://localhost/cgbarbershops/index.php/mainsite_registration_step1/checkDomain?domain="+input,true);
+                xmlhttp.send();*/
+            });
             responsiveForm();
             $(window).resize(function(){
                 responsiveForm();
@@ -84,7 +111,7 @@
                         <option value="com">com</option>
                         <option value="org">org</option>
                     </select>
-                    <label class="yes_or_no yes" id="checkPicDomain"></label>
+                    <label class="yes_or_no" id="checkPicDomain"></label>
                 </div>
             </div>
             <div class="form-inline center-block">
