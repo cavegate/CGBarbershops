@@ -1,3 +1,17 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 600px;
+
+}
+
+.img-porgress
+{
+    padding: 5% 10%;
+}
+
 #step1
 {
     background-image: url("../images/step1_pattern.png");
@@ -17,14 +31,12 @@
 
 .pos
 {
-    position: relative;
-    top: 100px;
+    height:25%;
 }
 
 .pos2
 {
-    position: relative;
-    top: 250px;
+    height:25%;
 }
 
 .period
@@ -61,8 +73,65 @@
 
 .btn-gold
 {
+    height: 30;
+    padding-top: 5px;
     color: #fff;
     background-color: #caba31;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-gold:hover
+{
+    background-color: #998926;
+    height: 30px;
+}
+
+.btn-green
+{
+    color: #fff;
+    background-color: #1d9720;
     font-family: tahoma;
     font-size: 18px;
+}
+
+.nav
+{
+    background-image: url("../images/nav_pattern.png");
+    height: 70px;
+    direction: rtl;
+}
+
+.nav ul
+{
+    float: right;
+    text-align: right;
+}
+
+.nav li {
+    font-family: tahoma;
+}
+
+.nav-pills>li>a, .nav-pills>li>a:focus
+{
+    color: #ffffff;
+    height: 70px;
+    padding-top: 25px;
+
+}
+
+.nav-pills>li>a:hover
+{
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
+{
+    color: #caba31;
+    background-color: #000;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 10px;
 }

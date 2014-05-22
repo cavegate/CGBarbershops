@@ -15,9 +15,9 @@
     <title>
         ثبت نام - مرحله 1
     </title>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css"><!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css"><!-- Latest compiled and minified CSS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
@@ -62,35 +62,41 @@
             <div class="visible-lg">lg</div>-->
         </div>
     </div>
-        <div class="row">
-            <img src="../public/images/frame_and_logo.png" id="frame_and_logo" class="hidden-xs">
-        </div>
-        <div class="row pos">
-                <img class="img-responsive center-block" src="../public/images/step1_progressbar.png"/>
-        </div>
-        <div class="row pos2">
-                <form role="form">
-                    <div class="form-inline center-block">
-                        <div class="form-group">
-                            <label class="sr-only">دامنه مورد نظر</label>
-                            <input type="text" class="form-control input-lg center_text" placeholder="دامنه مورد نظر شما"  id="inputDomain">
+    <div class="row">
+        <img src="../public/images/frame_and_logo.png" id="frame_and_logo" class="hidden-xs">
+    </div>
+    <div class="row pos">
+            <img class="img-responsive center-block img-porgress" src="../public/images/step1_progressbar.png"/>
+    </div>
+    <div class="row pos2">
+        <form role="form">
+            <div class="form-inline center-block">
+                <div class="form-group">
+                    <label class="sr-only">دامنه مورد نظر</label>
+                    <input type="text" class="form-control input-lg center_text" placeholder="دامنه مورد نظر شما"  id="inputDomain">
 
-                            <label class="period" id="periodDomain">
-                                .
-                            </label>
-                            <label class="sr-only">نوع دامنه</label>
-                            <select class="form-control input-lg center_text" id="selectDomain">
-                                <option value="ir">ir</option>
-                                <option value="com">com</option>
-                                <option value="org">org</option>
-                            </select>
-                            <label class="yes_or_no yes" id="checkPicDomain"></label>
-                        </div>
-                    </div>
-                    <div class="form-inline center-block">
-                        <button type="submit" class="btn btn-gold btn-lg" id="submitDomain">بررسی دامنه</button>
-                    </div>
-                </form>
+                    <label class="period" id="periodDomain">
+                        .
+                    </label>
+                    <label class="sr-only">نوع دامنه</label>
+                    <select class="form-control input-lg center_text" id="selectDomain">
+                        <option value="ir">ir</option>
+                        <option value="com">com</option>
+                        <option value="org">org</option>
+                    </select>
+                    <label class="yes_or_no yes" id="checkPicDomain"></label>
+                </div>
             </div>
-        </div>
+            <div class="form-inline center-block">
+                <button type="submit" class="btn btn-green btn-lg" id="submitDomain">بررسی دامنه</button>
+            </div>
+        </form>
+    </div>
+    <ul class="nav nav-pills nav-justified navbar-fixed-bottom " id="mainsiteNavbar">
+        <li><a href="#">خانه</a></li>
+        <li class="active"><a href="#">خرید</a></li>
+        <li><a href="#">درباره ما</a></li>
+        <li><a href="#">ارتباط با ما</a></li>
+        <li><a class="btn-gold" href="#">ورود</a></li>
+    </ul>
 </body>
