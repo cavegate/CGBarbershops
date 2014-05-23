@@ -46,31 +46,50 @@
         }
         x=0;
         $(document).ready(function(){
+            $('#inputDomain').keypress(function () {
+                $("#checkPicDomain").attr('class', "yes_or_no");
+                $("#form_group_registration").attr('class', "form-group");
+            });
+            $('#inputDomain').change(function () {
+                $("#checkPicDomain").attr('class', "yes_or_no");
+                $("#form_group_registration").attr('class', "form-group");
+            });
+            $('#selectDomain').change(function () {
+                $("#checkPicDomain").attr('class', "yes_or_no");
+                $("#form_group_registration").attr('class', "form-group");
+            });
             $("#submitDomain").click(function(){
                 var input = $("#inputDomain").val();
                 if (input.length==0)
                 {
-                    console.log('not valid');
                     $("#checkPicDomain").attr('class', "yes_or_no no");
-                    $("#checkPicDomain").html("no");
-                    return;
+                    return false;
                 }
                 input = input.concat(".",$("#selectDomain option:selected").text());
                 //alert(input);
-                $.get("index.php/getCheck",function(result){
-                    alert(result);
-                });
-                /*var xmlhttp=new XMLHttpRequest();
-                xmlhttp.onreadystatechange=function()
-                {
-                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				request = $.ajax({
+                    url:"<?php echo base_url();?>index.php/mainsite_registration_step1/check_domain",
+                    type:"POST",
+                    data:{"domain":input},
+                    success:function(result){
+                        $("#checkPicDomain").attr('class', "yes_or_no ".concat(result));
+                        if(result == "yes")
+                        {
+                            $("#form_group_registration").attr('class', "form-group has-success");
+                        }
+                        else if(result == "no")
+                        {
+                            $("#form_group_registration").attr('class', "form-group has-error");
+                        }
+				    },
+                    beforeSend:function()
                     {
-                        alert(xmlhttp.responseText);
-                        document.getElementById("checkPicDomain").className = "yes_or_no ".concat(xmlhttp.responseText);
+                    },
+                    error: function(xhr, status, error) {
+                        alert("در حال حاضر امکان بررسی دامنه وجود ندارد");
                     }
-                }
-                xmlhttp.open("GET","http://localhost/cgbarbershops/index.php/mainsite_registration_step1/checkDomain?domain="+input,true);
-                xmlhttp.send();*/
+                });
+                return false;
             });
             responsiveForm();
             $(window).resize(function(){
@@ -98,7 +117,7 @@
     <div class="row pos2">
         <form role="form">
             <div class="form-inline center-block">
-                <div class="form-group">
+                <div class="form-group" id="form_group_registration">
                     <label class="sr-only">دامنه مورد نظر</label>
                     <input type="text" class="form-control input-lg center_text" placeholder="دامنه مورد نظر شما"  id="inputDomain">
 
