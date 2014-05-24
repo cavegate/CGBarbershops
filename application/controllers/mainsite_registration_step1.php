@@ -22,6 +22,7 @@ class Mainsite_registration_step1 extends CI_Controller {
      */
     public function index()
     {
+        $this->load->helper('url');
         $this->load->view('mainsite_registration_step1');
     }
 }

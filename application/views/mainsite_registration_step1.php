@@ -17,10 +17,15 @@
     </title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css"><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/style.css"><!-- Latest compiled and minified CSS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
+        /*function change_height() {
+            var h = screen.height;
+            document.getElementsByName('div1').innerHTML=h;
+        }
+
         function responsiveForm()
         {
             var w = window.innerWidth;
@@ -48,12 +53,13 @@
             responsiveForm();
             $(window).resize(function(){
                 responsiveForm();
+                change_height();
             });
-        });
+        });*/
     </script>
 </head>
 <body id="step1">
-    <div class="row">
+    <div name="div1" class="row">
         <div class="col-xs-3 col-xs-push-9">
             <!--<span id="myText">text</span>
             <div class="visible-xs">xs</div>
@@ -62,16 +68,16 @@
             <div class="visible-lg">lg</div>-->
         </div>
     </div>
+    <div id="top-div"></div>
     <div class="row">
-        <img src="../public/images/frame_and_logo.png" id="frame_and_logo" class="hidden-xs">
+        <img src="<?php echo base_url(); ?>public/images/frame_and_logo.png" id="frame_and_logo" class="hidden-xs">
     </div>
     <div class="row pos">
-            <img class="img-responsive center-block img-porgress" src="../public/images/step1_progressbar.png"/>
+            <img src="<?php echo base_url(); ?>public/images/step1_progressbar.png" id="progress_bar" class="img-responsive center-block img-porgress" />
     </div>
     <div class="row pos2">
         <form role="form">
-            <div class="form-inline center-block">
-                <div class="form-group">
+            <div class="domain-form">
                     <label class="sr-only">دامنه مورد نظر</label>
                     <input type="text" class="form-control input-lg center_text" placeholder="دامنه مورد نظر شما"  id="inputDomain">
 
@@ -85,14 +91,13 @@
                         <option value="org">org</option>
                     </select>
                     <label class="yes_or_no yes" id="checkPicDomain"></label>
-                </div>
             </div>
-            <div class="form-inline center-block">
+            <div class="submitDomain form-inline center-block">
                 <button type="submit" class="btn btn-green btn-lg" id="submitDomain">بررسی دامنه</button>
             </div>
         </form>
     </div>
-    <ul class="nav nav-pills nav-justified navbar-fixed-bottom " id="mainsiteNavbar">
+    <ul class="nav nav-pills nav-justified navbar-fixed-bottom" id="mainsiteNavbar">
         <li><a href="#">خانه</a></li>
         <li class="active"><a href="#">خرید</a></li>
         <li><a href="#">درباره ما</a></li>
@@ -100,3 +105,6 @@
         <li><a class="btn-gold" href="#">ورود</a></li>
     </ul>
 </body>
+<!--
+nav nav-pills nav-justified navbar-fixed-bottom
+-->
