@@ -68,12 +68,26 @@
             <div class="visible-lg">lg</div>-->
         </div>
     </div>
-    <div id="top-div"></div>
-    <div class="row">
-        <img src="<?php echo base_url(); ?>public/images/frame_and_logo.png" id="frame_and_logo" class="hidden-xs">
+    <div class="logo-major">
+        <div class="row logo-minor">
+            <img src="<?php echo base_url(); ?>public/images/frame_and_logo.png" id="frame_and_logo">
+        </div>
     </div>
+    <div class="sn-major">
+        <div class="row sn-minor">
+            <a href=""><em title="facebook"><img src="<?php echo base_url(); ?>public/images/facebook.png"></em></a>
+            <a href=""><em title="twitter"><img src="<?php echo base_url(); ?>public/images/twitter.png"></em></a>
+            <a href=""><em title="youtube"><img src="<?php echo base_url(); ?>public/images/youtube.png"></em></a>
+            <a href=""><em title="instagram"><img src="<?php echo base_url(); ?>public/images/instagram.png"></em></a>
+            <a href=""><em title="linkedin"><img src="<?php echo base_url(); ?>public/images/linkedin.png"></em></a>
+            <a href=""><em title="dribble"><img src="<?php echo base_url(); ?>public/images/dribble.png"></em></a>
+            <a href=""><em title="aparat"><img src="<?php echo base_url(); ?>public/images/aparat.png"></em></a>
+            <a href=""><em title="rss"><img src="<?php echo base_url(); ?>public/images/rss.png"></em></a>
+        </div>
+    </div>
+    <div id="top-div"></div>
     <div class="row pos">
-            <img src="<?php echo base_url(); ?>public/images/step1_progressbar.png" id="progress_bar" class="img-responsive center-block img-porgress" />
+        <img src="<?php echo base_url(); ?>public/images/step1_progressbar.png" id="progress_bar" class="img-responsive center-block img-porgress" />
     </div>
     <div class="row pos2">
         <form role="form">

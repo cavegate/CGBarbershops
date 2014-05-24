@@ -203,6 +203,15 @@
         height: 12.5%;
     }
 
+    .sn-major{
+        padding-right: 10px;
+        direction: rtl;
+    }
+
+    .sn-minor{
+        display: inline-block;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -231,9 +240,10 @@
 
     #frame_and_logo
     {
-        position: fixed;
-        top:0px;
-        left:10px;
+        position: relative;
+        top: -1px;
+        width: 100%;
+        padding-left: 4%;
     }
 
     .center_text
@@ -433,6 +443,29 @@
     padding-top: 20px;
     padding-bottom: 20px;
     }
+
+    .logo-major{
+        direction: rtl;
+        width: 100%;
+    }
+
+    .logo-minor{
+        margin: auto;
+        display: table;
+    }
+
+    .sn-major{
+        direction: rtl;
+        width: 100%;
+    }
+
+    .sn-minor{
+        margin: auto;
+        display: table;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media(min-width: 768px) and (max-width: 1024px)
@@ -462,6 +495,10 @@
     #selectdomain {
         width: 70px;
         float: left;
+    }
+
+    .sn-minor{
+        width: 200px;
     }
 
 }
