@@ -17,6 +17,10 @@ body {
     background-image: url("../images/step1_pattern.png");
 }
 
+#main_everywhere
+{
+    background-image: url("../images/main_pattern.png");
+}
 #frame_and_logo
 {
     position: fixed;
