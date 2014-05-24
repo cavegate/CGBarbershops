@@ -1,137 +1,467 @@
-html {
-    height: 100%;
+@media (min-width: 768px) {
+    html {
+
+    }
+
+    body {
+        font-family: B Koodak;
+        font-size: 22px;
+    }
+
+    .row
+    {
+        margin:0px;
+    }
+    .img-porgress
+    {
+        /*padding: 5% 10%;*/
+    }
+
+    #step1
+    {
+        background-image: url("../images/step1_pattern.png");
+    }
+
+    #frame_and_logo
+    {
+        position: fixed;
+        top:0px;
+        left:10px;
+    }
+
+    .center_text
+    {
+        text-align: center;
+    }
+
+    .pos
+    {
+        height:25%;
+    }
+
+    .pos2
+    {
+        height:25%;
+    }
+
+    .period
+    {
+        font-size: 30px;
+        width: 10px;
+    }
+
+    .yes_or_no
+    {
+        /*position: absolute;
+        top: 3px;
+        left: 50px;*/
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/accept-and-reject.png");
+        background-repeat: no-repeat;
+    }
+
+    .yes
+    {
+        background-position: 0px 0px;
+    }
+
+    .no
+    {
+        background-position: -50px 0px;
+    }
+
+    #submitDomain
+    {
+        margin-top: 30px;
+    }
+
+    .btn-gold
+    {
+        height: 30px;
+        /*padding-top: 5px;*/
+        color: #fff;
+        background-color: #caba31;
+        width: 50%;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+
+        /*background-color: rgba(255, 255, 255, 0.09);*/
+        /*height: 30px;*/
+        padding-top: 0px;
+    }
+
+    .btn-gold:hover
+    {
+        /*background-color: #998926;
+        height: 30px;*/
+    }
+
+    .btn-green
+    {
+        color: #fff;
+        background-color: #1d9720;
+        font-size: 18px;
+    }
+
+    .nav
+    {
+        background-image: url("../images/nav_pattern.png");
+        height: 70px;
+        direction: rtl;
+    }
+
+    .nav ul
+    {
+        float: right;
+        text-align: right;
+    }
+
+    .nav li {
+
+    }
+
+    .nav-pills>li>a, .nav-pills>li>a:focus
+    {
+        color: #ffffff;
+        height: 30px;
+        padding-top: 0px;
+        margin-top: 20px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-pills>li>a:hover
+    {
+        /*background-color: transparent;*/
+        text-decoration: none;
+        height: 30px;
+        padding-top: 0px;
+        background-color: rgba(255, 255, 255, 0.44);
+
+    }
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
+    {
+        color: #caba31;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 30px;
+        padding-top: 0px;
+        margin-top: 10px;
+        text-shadow: 0px 0px 20px #F5AA0B;
+    }
+
+    .input-lg
+    {
+        line-height: 46px;
+    }
+
+    .nav-justified {
+        width: 103%;
+    }
+
+    #progress_bar
+    {
+        margin: auto;
+
+    }
+
+    .form-group
+    {
+        margin: auto;
+    }
+
+    #inputdomain{
+        width: 250px;
+        float: left;
+    }
+
+    #perioddomain{
+        float: left;
+    }
+
+    #selectdomain{
+        width: 150px;
+        float: left;
+    }
+
+    .domain-form
+    {
+        width: 460px;
+        margin: auto;
+    }
+
+    .submitDomain
+    {
+        width: 109px;
+    }
+
+    #top-div
+    {
+        height: 12.5%;
+    }
+
 }
 
-body {
-    min-height: 600px;
+@media (max-width: 767px) {
+    html {
 
+    }
+
+    body {
+        font-family: B Koodak;
+        font-size: 22px;
+    }
+
+    .row
+    {
+        margin:0px;
+    }
+    .img-porgress
+    {
+        /*padding: 5% 10%;*/
+    }
+
+    #step1
+    {
+        background-image: url("../images/step1_pattern.png");
+    }
+
+    #frame_and_logo
+    {
+        position: fixed;
+        top:0px;
+        left:10px;
+    }
+
+    .center_text
+    {
+        text-align: center;
+    }
+
+    .pos
+    {
+        padding-bottom: 50px;
+    }
+
+    .pos2
+    {
+        height: 160px;
+    }
+
+    .period
+    {
+        font-size: 30px;
+        width: 10px;
+    }
+
+    .yes_or_no
+    {
+        /*position: absolute;
+        top: 3px;
+        left: 50px;*/
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/accept-and-reject.png");
+        background-repeat: no-repeat;
+    }
+
+    .yes
+    {
+        background-position: 0px 0px;
+    }
+
+    .no
+    {
+        background-position: -50px 0px;
+    }
+
+    #submitDomain
+    {
+        margin-top: 30px;
+    }
+
+    .btn-gold
+    {
+        height: 30px;
+        /*padding-top: 5px;*/
+        color: #fff;
+        background-color: #caba31;
+        width: 50%;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+
+        /*background-color: rgba(255, 255, 255, 0.09);*/
+        /*height: 30px;*/
+        padding-top: 0px;
+    }
+
+    .btn-gold:hover
+    {
+        /*background-color: #998926;
+        height: 30px;*/
+    }
+
+    .btn-green
+    {
+        color: #fff;
+        background-color: #1d9720;
+        font-size: 18px;
+    }
+
+    .nav
+    {
+        background-image: url("../images/nav_pattern.png");
+        height: 352px;
+        /*direction: rtl;*/
+    }
+
+    .nav-pills>li+li {
+        margin-left: 0;
+    }
+
+    .nav ul
+    {
+        float: right;
+        text-align: right;
+    }
+
+    .nav li {
+
+    }
+
+    .nav-pills>li>a, .nav-pills>li>a:focus
+    {
+        color: #ffffff;
+        height: 30px;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-justified>li>a {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .nav-pills>li>a:hover
+    {
+        /*background-color: transparent;*/
+        text-decoration: none;
+        height: 30px;
+        padding-top: 0px;
+        background-color: rgba(255, 255, 255, 0.44);
+
+    }
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
+    {
+        color: #caba31;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 30px;
+        padding-top: 0px;
+        margin-top: 0px;
+        text-shadow: 0px 0px 20px #F5AA0B;
+    }
+
+    .input-lg
+    {
+        line-height: 46px;
+    }
+
+    .nav-justified {
+        width: 103%;
+    }
+
+    #progress_bar
+    {
+        margin: auto;
+
+    }
+
+    .form-group
+    {
+        margin: auto;
+    }
+
+    #inputdomain{
+        width: 250px;
+        float: left;
+    }
+
+    #perioddomain{
+        float: left;
+    }
+
+    #selectdomain{
+        width: 150px;
+        float: left;
+    }
+
+    .domain-form
+    {
+        width: 460px;
+        margin: auto;
+    }
+
+    .submitDomain
+    {
+        width: 109px;
+    }
+
+    #top-div
+    {
+        height: 20px;
+    }
+
+    .navbar-fixed-bottom{
+        position: inherit;
+    }
+
+    .nav-justified {
+        width: 100%;
+    }
+
+    ul>li {
+    /* margin-top: 15px; */
+    /* margin-bottom: 33px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
 }
 
-.img-porgress
+@media(min-width: 768px) and (max-width: 1024px)
 {
-    padding: 5% 10%;
+    #frame_and_logo
+    {
+        /*display: none;*/
+        width: 24%;
+        /*width: 60%;
+        margin-left: 20%;
+        z-index: -1;
+        opacity: 0.5;*/
+    }
 }
 
-#step1
+@media(max-width: 500px)
 {
-    background-image: url("../images/step1_pattern.png");
-}
+    #inputdomain {
+        width: 150px;
+        float: left;
+    }
+    .domain-form {
+        width: 280px;
+        margin: auto;
+    }
 
-#frame_and_logo
-{
-    position: fixed;
-    top:0px;
-    left:10px;
-}
+    #selectdomain {
+        width: 70px;
+        float: left;
+    }
 
-.center_text
-{
-    text-align: center;
-}
-
-.pos
-{
-    height:25%;
-}
-
-.pos2
-{
-    height:25%;
-}
-
-.period
-{
-    font-size: 30px;
-    width: 10px;
-}
-
-.yes_or_no
-{
-    /*position: absolute;
-    top: 3px;
-    left: 50px;*/
-    width: 50px;
-    height: 50px;
-    background-image: url("../images/accept-and-reject.png");
-    background-repeat: no-repeat;
-}
-
-.yes
-{
-    background-position: 0px 0px;
-}
-
-.no
-{
-    background-position: -50px 0px;
-}
-
-#submitDomain
-{
-    margin-top: 30px;
-}
-
-.btn-gold
-{
-    height: 30;
-    padding-top: 5px;
-    color: #fff;
-    background-color: #caba31;
-    width: 80%;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-gold:hover
-{
-    background-color: #998926;
-    height: 30px;
-}
-
-.btn-green
-{
-    color: #fff;
-    background-color: #1d9720;
-    font-family: tahoma;
-    font-size: 18px;
-}
-
-.nav
-{
-    background-image: url("../images/nav_pattern.png");
-    height: 70px;
-    direction: rtl;
-}
-
-.nav ul
-{
-    float: right;
-    text-align: right;
-}
-
-.nav li {
-    font-family: tahoma;
-}
-
-.nav-pills>li>a, .nav-pills>li>a:focus
-{
-    color: #ffffff;
-    height: 70px;
-    padding-top: 25px;
-
-}
-
-.nav-pills>li>a:hover
-{
-    background-color: transparent;
-}
-
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
-{
-    color: #caba31;
-    background-color: #000;
-    height: 30px;
-    padding-top: 5px;
-    margin-top: 10px;
 }
